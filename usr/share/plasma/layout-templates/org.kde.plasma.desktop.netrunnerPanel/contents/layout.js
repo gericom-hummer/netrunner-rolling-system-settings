@@ -27,15 +27,7 @@ if (freeEdges["bottom"] == true) {
 
 panel.height = screenGeometry(panel.screen).height > 1024 ? 35 : 30
 
-var kicker = panel.addWidget("org.kde.plasma.netrunnerkicker")
-kicker.currentConfigGroup = ["Shortcuts"]
-kicker.writeConfig("global", "Alt+F1")
-
-kicker.currentConfigGroup = ["General"]
-kicker.writeConfig("customButtonImage", "file:///usr/share/pixmaps/homerun.svgz")
-kicker.writeConfig("favoriteApps", ["systemsettings.desktop", "org.kde.ksysguard.desktop", "octopi.desktop", "vokoscreen.desktop"])
-kicker.writeConfig("limitDepth", true)
-kicker.writeConfig("useCustomButtonImage", true)
+panel.addWidget("org.kde.plasma.netrunnerkicker")
 
 var eitm = panel.addWidget("org.kde.plasma.expandingiconstaskmanager")
 eitm.currentConfigGroup = ["Configuration", "General"]
@@ -49,7 +41,7 @@ yakuakeIcon.writeConfig("genericName", "Drop-down Terminal")
 yakuakeIcon.writeConfig("iconName", "yakuake")
 yakuakeIcon.writeConfig("url", "/usr/share/applications/kde4/yakuake.desktop")
 
-var pvolumemixer = panel.addWidget("org.kde.plasma.volume")
+panel.addWidget("org.kde.plasma.volume")
 
 var systray = panel.addWidget("org.kde.plasma.systemtray")
 systray.currentConfigGroup = ["General"]
