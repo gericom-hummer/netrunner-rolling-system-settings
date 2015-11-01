@@ -10,8 +10,8 @@ X-KDE-ServiceTypes=KCModule
 X-KDE-Library=kcm_lookandfeel
 X-KDE-ParentApp=kcontrol
 
-X-KDE-System-Settings-Parent-Category=other
-X-KDE-Weight=100
+X-KDE-System-Settings-Parent-Category=desktop-appearance
+X-KDE-Weight=5
 
 Name=Look And Feel
 Name[ca]=Aspecte i comportament
