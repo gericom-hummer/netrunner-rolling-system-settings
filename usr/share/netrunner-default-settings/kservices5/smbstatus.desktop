@@ -1,4 +1,3 @@
-#!/usr/bin/env xdg-open
 [Desktop Entry]
 Exec=kcmshell5 smbstatus
 Icon=preferences-system-network-share-windows-status
